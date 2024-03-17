@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-by-capital-page',
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ByCapitalPageComponent {
 
+
+  searchByCapital(value: string): void {
+    console.log('Desde la pagina de capital UUUUU')
+    console.log(value)
+  }
 }
