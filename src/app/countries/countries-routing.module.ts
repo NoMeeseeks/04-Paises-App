@@ -7,9 +7,6 @@ import { CountryPageComponent } from './pages/country-page/country-page.componen
 
 const routes: Route[] = [
   {
-    path: '**',
-    redirectTo: 'by-capital'
-  }, {
     path: 'by-capital',
     component: ByCapitalPageComponent
   },
