@@ -13,12 +13,19 @@ const routes: Route[] = [
   {
     path: 'by-country',
     component: ByCountryPageComponent
-  }, {
+  },
+  {
     path: 'by-region',
     component: ByRegionPageComponent
-  }, {
+  },
+  {
     path: 'by/:id',
     component: CountryPageComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'by-capital'
+
   }]
 @NgModule({
   imports: [RouterModule.forChild(routes)],
