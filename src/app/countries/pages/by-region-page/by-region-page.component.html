@@ -3,13 +3,14 @@
 
 <div class="row">
   <div class="col">
-    <shared-search-box (onValue)="searchByRegion($event)" placeHolder="Buscar por Region"></shared-search-box>
+    <shared-search-box (onDebounce)="searchByRegion($event)" placeHolder="Buscar por Region"></shared-search-box>
   </div>
 </div>
 
 <div class="row">
   <div class="col">
     <hr>
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
     <countries-table [countries]="countries"></countries-table>
   </div>
 </div>
